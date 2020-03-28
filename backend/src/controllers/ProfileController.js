@@ -3,6 +3,7 @@ const connection = require('../database/conections');
 
 module.exports={
     async index (request, response){
+        //onsole.log("Entrou");
         const ong_id = request.headers.authorization;
 
         const incidents = await connection('incidents')

@@ -20,4 +20,12 @@ routes.get('/incidents', incidentController.index);
 routes.delete('/incidents/:id', incidentController.delete);
 routes.get('/profile', ProfileController.index);
 
+
+routes.get('/users', (request, response)=>{
+    return  response.json({
+        evento: 'Semana Omnistack 11.0',
+        nome: 'Adilson Muito Fixes'
+    })
+})
+
 module.exports = routes;
